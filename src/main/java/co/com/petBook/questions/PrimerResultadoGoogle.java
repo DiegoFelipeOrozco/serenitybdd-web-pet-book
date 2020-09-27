@@ -1,10 +1,9 @@
-package co.com.devco.questions;
+package co.com.petBook.questions;
 
+import co.com.petBook.userinterfaces.GoogleResultadosPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Attribute;
-
-import static co.com.devco.userinterfaces.GoogleResultadosPage.PRIMER_RESULTADO;
 
 public class PrimerResultadoGoogle implements Question<Boolean> {
     private String resultado;
@@ -19,7 +18,7 @@ public class PrimerResultadoGoogle implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
-        String resultadoEncontrado = Attribute.of(PRIMER_RESULTADO).named("href").viewedBy(actor).asString();
+        String resultadoEncontrado = Attribute.of(GoogleResultadosPage.PRIMER_RESULTADO).named("href").viewedBy(actor).asString();
         return resultadoEncontrado.contains(resultado);
     }
 }

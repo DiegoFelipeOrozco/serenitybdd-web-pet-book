@@ -1,4 +1,4 @@
-package co.com.devco.exceptions;
+package co.com.petBook.exceptions;
 
 public class ResultadoDeBusquedaInesperado  extends AssertionError {
     public static final String ENCONTRADO_OTRO_RESULTADO = "El resultado obtenido no es el esperado";
