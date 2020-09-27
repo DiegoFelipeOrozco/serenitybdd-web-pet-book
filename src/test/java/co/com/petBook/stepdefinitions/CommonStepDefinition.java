@@ -1,4 +1,4 @@
-package co.com.devco.stepdefinitions;
+package co.com.petBook.stepdefinitions;
 
 import cucumber.api.java.Before;
 import net.serenitybdd.screenplay.actors.OnStage;
