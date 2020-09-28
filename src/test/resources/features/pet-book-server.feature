@@ -5,5 +5,5 @@ Característica: Servidor de Pet-book
   Para acceder a la aplicacion de Pet-book
 
   Escenario: Abrir Pet-book
-    Cuando un usuario especifica la direccion del servidor en el navegador
-    Entonces debe ver la aplicacion con todas las imagenes
+    Cuando Carlos especifica la direccion del servidor en el navegador
+    Entonces debe ver la aplicacion con al menos 1 imagen(es)
