@@ -5,17 +5,17 @@ Característica: Visualizacion de imagenes
   Para ver imagenes de mascotas
 
   Escenario: Filtrar por perros
-    Cuando un usuario busca solo perros
-    Entonces debe ver todas las imagenes de perros unicamente
+    Cuando Sebas busca solo perros
+    Entonces debe ver todas las imágenes de perros únicamente
 
   Escenario: Filtrar por gatos
-      Cuando un usuario busca solo perros
-      Entonces debe ver todas las imagenes de perros unicamente
+      Cuando Sebas busca solo perros
+      Entonces debe ver todas las imágenes de perros únicamente
 
   Escenario: Ver todo
-      Cuando un usuario busca deshace el filtro
-      Entonces debe ver todas las imagenes
+      Cuando Katherine quiere deshacer el filtro
+      Entonces debe ver todas las imágenes
 
   Escenario: Enfocar imagen
-      Cuando un usuario elige una imagen
+      Cuando Diego quiere ver una imagen en particular
       Entonces debe ver dicha imagen del tamaño de la pantalla
