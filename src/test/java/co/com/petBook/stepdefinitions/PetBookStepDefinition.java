@@ -9,20 +9,17 @@ import net.serenitybdd.screenplay.RememberThat;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.questions.Attribute;
 import net.serenitybdd.screenplay.questions.CSSValue;
-import net.serenitybdd.screenplay.actions.Open;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
-import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class PetBookStepDefinition {
 
-    @Cuando("^(.*) elige una imagen$")
-    public void unUsuarioEligeUnaImagen(String actor) {
-        final Actor theActor = theActorCalled(actor);
+    @Cuando("^elige una imagen$")
+    public void unUsuarioEligeUnaImagen() {
+        final Actor theActor = theActorInTheSpotlight();
 
         theActor.attemptsTo(
-                Open.url(PetBookPage.HOME),
                 RememberThat.theValueOf("imagen seleccionada").isAnsweredBy(
                         Attribute.of(PetBookPage.FIRST_IMAGE).named("src").viewedBy(theActor).asAQuestion()
                 ),
