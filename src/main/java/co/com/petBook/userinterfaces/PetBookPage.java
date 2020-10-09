@@ -2,7 +2,6 @@ package co.com.petBook.userinterfaces;
 
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
-import static net.serenitybdd.screenplay.targets.Target.the;
 
 public class PetBookPage {
 
