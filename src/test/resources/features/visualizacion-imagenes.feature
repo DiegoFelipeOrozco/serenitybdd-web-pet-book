@@ -17,5 +17,5 @@ Característica: Visualizacion de imagenes
       Entonces debe ver todas las imagenes
 
   Escenario: Enfocar imagen
-      Cuando Diego quiere ver una imagen en particular
-      Entonces debe ver dicha imagen del tamaño de la pantalla
+      Cuando Diego elige una imagen
+      Entonces debe ver dicha imagen de mayor tamano

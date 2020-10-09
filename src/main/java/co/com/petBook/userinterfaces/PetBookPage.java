@@ -13,6 +13,6 @@ public class PetBookPage {
     public static final Target BOTON_PERRO = Target.the("Boton Perro").located(By.xpath("//button[@id='botonPerro']"));
     public static final Target BOTON_GATO = Target.the("Boton Perro").located(By.xpath("//button[@id='botonGato']"));
     public static final Target BOTON_ALL = Target.the("Boton ALL").located(By.xpath("//button[@id='botonAll']"));
-    public static final Target FIRST_IMAGE = the("primera imagen").locatedBy("//li[1]//img[@class='img' and @width='240' and @height='170']");
-    public static final Target FOCUSED_IMAGE = the("imagen enfocada").locatedBy("//div[@class='img-container']");
+    public static final Target FIRST_IMAGE = Target.the("primera imagen").located(By.xpath("//li[1]//img[@class='img' and @width='240' and @height='170']"));
+    public static final Target FOCUSED_IMAGE = Target.the("imagen enfocada").located(By.xpath("//div[@class='img-container']"));
 }
