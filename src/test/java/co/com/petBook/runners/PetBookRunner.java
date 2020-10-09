@@ -7,10 +7,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-		features = "src/test/resources/features/google_search.feature",
-		glue = {"co.com.petBook.stepdefinitions"},
-		snippets = SnippetType.CAMELCASE
+        features = "src/test/resources/features/visualizacion-imagenes.feature",
+        glue = {"co.com.petBook.stepdefinitions"},
+        snippets = SnippetType.CAMELCASE
 )
-public class GoogleSearchRunner {
-
+public class PetBookRunner {
 }

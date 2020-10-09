@@ -12,15 +12,14 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class PetBookServerDefinition {
 
-    @Cuando("^(.*) especifica la direccion del servidor en el navegador$")
+    @Cuando("^(.*) especifica la dirección del servidor en el navegador$")
     public void someoneSpecifyServerAdressInABrowser(String actor) {
         theActorCalled(actor).attemptsTo(
                 Open.url(PetBookPage.HOME)
         );
     }
 
-
-    @Entonces("^debe ver la aplicacion con al menos (\\d+) imagen\\(es\\)$")
+    @Entonces("^debe ver la aplicación con al menos (\\d+) imagen\\(es\\)$")
     public void ShouldSeeImagesInAplication(int cantidadImagenes) {
         theActorInTheSpotlight().should(seeThat(
             PetBookHome.hasAtLessAnAmountOfImagesOf(cantidadImagenes)
