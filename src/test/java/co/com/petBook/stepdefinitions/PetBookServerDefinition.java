@@ -13,7 +13,7 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class PetBookServerDefinition {
 
-    @Cuando("^(.*) especifica la direccion del servidor en el navegador$")
+    @Cuando("^(.*) especifica la dirección del servidor en el navegador$")
     @Dado("^que (.*) esté en la aplicacion$")
     public void abrirAplicacion(String actor) {
         theActorCalled(actor).attemptsTo(
@@ -21,8 +21,7 @@ public class PetBookServerDefinition {
         );
     }
 
-
-    @Entonces("^debe ver la aplicacion con al menos (\\d+) imagen\\(es\\)$")
+    @Entonces("^debe ver la aplicación con al menos (\\d+) imagen\\(es\\)$")
     public void deberiaVerImagenesEnPantalla(int cantidadImagenes) {
         theActorInTheSpotlight().should(seeThat(
             PetBookHome.hasAtLessAnAmountOfImagesOf(cantidadImagenes)
